@@ -41,7 +41,7 @@ jobs:
         if [ "${{ matrix.project }}" == "RESTAPI" ]; then
           npm test -- --ci --reporters=default --reporters=jest-junit
         else
-          npx playwright test --reporter=junit --outputFile=test-results/junit-SDET.xml
+          npx playwright test
         fi
       env:
         JEST_JUNIT_OUTPUT_DIR: ./test-results
