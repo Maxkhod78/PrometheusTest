@@ -1,0 +1,37 @@
+[
+  {
+    "testName": "Create post with minimal data",
+    "userId": 1,
+    "title": "Minimal Post",
+    "body": "Just the basics",
+    "expectedStatus": 201
+  },
+  {
+    "testName": "Create post with full data",
+    "userId": 2,
+    "title": "Complete Post Title",
+    "body": "This is a complete post with all required fields properly filled out. It contains enough content to be meaningful.",
+    "expectedStatus": 201
+  },
+  {
+    "testName": "Create post with special characters",
+    "userId": 3,
+    "title": "Special Characters: áéíóú ñ @#$%",
+    "body": "Testing special characters: àâäçéèêëïîôùûüÿ ÆŒ œß",
+    "expectedStatus": 201
+  },
+  {
+    "testName": "Create post with long content",
+    "userId": 4,
+    "title": "Very Long Post Title That Exceeds Normal Length Expectations",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "expectedStatus": 201
+  },
+  {
+    "testName": "Create post with numeric data",
+    "userId": 999,
+    "title": "Post with numbers 1234567890",
+    "body": "Content with numbers: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0",
+    "expectedStatus": 201
+  }
+]
