@@ -4,6 +4,7 @@
   "description": "A modular test framework for REST API testing with config-driven setup, DTOs, fluent assertions, and logging",
   "main": "index.js",
   "scripts": {
+    "build": "echo 'No build step required for jest tests'",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
