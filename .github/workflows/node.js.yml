@@ -29,6 +29,9 @@ jobs:
       run: |
         cd ${{ matrix.project }}
         npm ci
+        if [ "${{ matrix.project }}" == "SDET" ]; then
+          npx playwright install --with-deps
+        fi
     - name: Build ${{ matrix.project }}
       run: |
         cd ${{ matrix.project }}
