@@ -24,4 +24,4 @@ class PrometheusJobsPage {
   }
 }
 
-module.exports = PrometheusJobsPage;
+export default PrometheusJobsPage;

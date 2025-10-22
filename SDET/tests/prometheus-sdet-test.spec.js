@@ -1,7 +1,7 @@
-const { test, expect } = require('@playwright/test');
-const GoogleSearchPage = require('../page-objects/GoogleSearchPage');
-const GoogleSearchResultsPage = require('../page-objects/GoogleSearchResultsPage');
-const PrometheusJobsPage = require('../page-objects/PrometheusJobsPage');
+import { test, expect } from '@playwright/test';
+import GoogleSearchPage from '../page-objects/GoogleSearchPage.js';
+import GoogleSearchResultsPage from '../page-objects/GoogleSearchResultsPage.js';
+import PrometheusJobsPage from '../page-objects/PrometheusJobsPage.js';
 
 test('Prometheus Group Senior SDET Job Search Test', async ({ page }) => {
   // Initialize page objects

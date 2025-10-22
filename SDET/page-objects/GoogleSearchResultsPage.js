@@ -19,4 +19,4 @@ class GoogleSearchResultsPage {
   }
 }
 
-module.exports = GoogleSearchResultsPage;
+export default GoogleSearchResultsPage;
